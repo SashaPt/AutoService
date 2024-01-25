@@ -1,0 +1,31 @@
+.footer {
+  background: #222;
+  padding: 40px 30px;
+}
+
+.footer__logo {
+  width: 480px;
+}
+
+.footer__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 50px;
+}
+
+.footer__copyright {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+}
+.footer__development {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}

@@ -1,0 +1,209 @@
+.contact {
+  padding: 104px 0 120px;
+}
+
+.contact__title {
+  color: #222;
+  text-align: center;
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 120%;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.contact__title-text_red {
+  color: #d10014;
+}
+
+.form {
+  padding: 60px;
+  background-color: #fff;
+}
+
+.form__fieldset {
+  margin-bottom: 32px;
+}
+
+.form__title {
+  color: #222;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 100%;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+.form__radio-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-bottom: 32px;
+}
+
+.form__radio-wrapper:last-child {
+  margin-bottom: 0;
+}
+
+.radio__input {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: absolute;
+}
+
+.radio__input:focus-visible + .radio__label {
+  border-color: #d10014;
+}
+
+.radio__input:checked + .radio__label {
+  background: #222;
+  color: #fff;
+}
+
+.radio__label {
+  display: block;
+  color: #222;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  border-radius: 50px;
+  background: #f0f4f4;
+  padding: 12px 20px;
+  border: 1px solid transparent;
+  transition: 0.3s ease-out;
+  cursor: pointer;
+}
+
+.radio__label:hover {
+  background: #e4f0f0;
+}
+
+.form__months {
+  margin-bottom: 16px;
+}
+
+.form__subtitle {
+  margin-bottom: 16px;
+  color: #222;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+.form__btn-month {
+  color: #222;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+.form__btn-month_active {
+  color: #d10014;
+}
+
+.form__input-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 8px;
+  row-gap: 12px;
+  margin-bottom: 32px;
+}
+
+.form__input {
+  border-radius: 8px;
+  background: #f0f4f4;
+  padding: 12px 20px;
+  color: #222;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 140%;
+  border: 1px solid transparent;
+  transition: 0.3s ease-out;
+}
+
+.form__input:placeholder-shown {
+  opacity: 0.4;
+}
+
+.form__input:hover {
+  opacity: 1;
+}
+
+.form__input:focus-visible,
+.form__input:focus {
+  border-color: #d0d0d0;
+  opacity: 1;
+}
+
+.form__info {
+  color: #222;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+.form__info-date {
+  display: flex;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.form__btns-wrapper {
+  display: flex;
+  gap: 8px;
+}
+
+.form__btn {
+  border-radius: 50px;
+  background: #f0f4f4;
+  display: flex;
+  padding: 12px 20px;
+  align-items: center;
+  gap: 6px;
+  color: #222;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 140%;
+  border: 1px solid transparent;
+  transition: 0.3s ease-out;
+}
+
+.form__btn:not(:disabled):hover {
+  background: #e4f0f0;
+}
+
+.form__btn:not(:disabled):focus {
+  border-color: #d10014;
+  background: #f0f4f4;
+}
+
+.form__btn svg {
+  fill: #222;
+}
+
+.form__btn:disabled {
+  color: #222;
+  background: #f0f4f4;
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.form__btn_next {
+  background: #d10014;
+  color: #fff;
+}
+
+.form__btn_next:not(:disabled):hover {
+  background: #222;
+}
+
+.form__btn_next:not(:disabled):focus {
+  border-color: #222;
+  background: #d10014;
+}
+
+.form__btn_next svg {
+  fill: #fff;
+}

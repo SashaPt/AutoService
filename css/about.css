@@ -1,0 +1,70 @@
+.about {
+  background-image: linear-gradient(#222 0%, #222 50%, #f0f4f4 50%, #f0f4f4 100%);
+  padding: 92px 0;
+}
+.about__bg {
+  display: flex;
+  min-height: 56vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-image: url('../img/redbg.svg');
+  position: relative;
+}
+
+.about__bg::before,
+.about__bg::after {
+  content: '';
+  position: absolute;
+  background-image: url('../img/tire.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  pointer-events: none;
+  height: 25vw;
+  left: 0;
+  right: 0;
+}
+
+.about__bg::before {
+  top: 0;
+  transform: translateY(-25%);
+}
+
+.about__bg::after {
+  bottom: 0;
+  transform: translateY(25%);
+}
+
+.about__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+.about__title {
+  max-width: min-content;
+  text-align: right;
+  justify-self: end;
+  padding: 14px 60px 14px 0;
+  color: #fff;
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 120%;
+  text-transform: uppercase;
+  border-right: 2px solid #fff;
+}
+
+.about__title-text_black {
+  color: #222;
+}
+
+.about__text {
+  justify-self: start;
+  padding: 14px 0 14px 60px;
+  max-width: 511px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 140%;
+}
