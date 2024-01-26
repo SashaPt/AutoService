@@ -1,6 +1,6 @@
 .footer {
   background: #222;
-  padding: 40px 30px;
+  padding: 40px 0 30px;
 }
 
 .footer__logo {
@@ -28,4 +28,36 @@
   display: flex;
   flex-direction: column;
   gap: 7px;
+}
+
+.footer__development-link{
+  transition: 0.3s ease-out;
+}
+
+.footer__development-link:hover {
+  color: #d10014;
+}
+
+@media (max-width: 660px) {
+  .footer__info {
+    margin-top: 44px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 26px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 24px 0 20px;
+  }
+
+  .footer__logo {
+    width: 230px;
+  }
+
+  .footer__info {
+    margin-top: 32px;
+    gap: 16px;
+  }
 }

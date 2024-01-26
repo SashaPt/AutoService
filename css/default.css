@@ -1,6 +1,7 @@
 html {
   box-sizing: border-box;
   position: relative;
+  scroll-behavior: smooth;
 }
 *,
 *::before,
@@ -96,3 +97,28 @@ a,
   padding: 0 var(--container-padding);
   margin: 0 auto;
 }
+  
+  
+  @media (max-width: 1080px) {
+    .container {
+      --container-padding: 66px;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .container {
+      --container-padding: 44px;
+    }
+  }
+
+  @media (max-width: 660px) {
+    .container {
+      --container-padding: 20px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .container {
+      --container-padding: 16px;
+    }
+  }

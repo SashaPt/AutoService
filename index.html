@@ -58,7 +58,7 @@
             class="contact__title-text contact__title-text_red">свяжемся с вами</span></h2>
 
         <form class="contact__form form">
-          <fieldset class="form__fieldset">
+          <fieldset class="form__fieldset form__fieldset-type">
             <legend class="form__title">Выберите нужное направление</legend>
 
             <div class="form__radio-wrapper">
@@ -193,12 +193,15 @@
 
             <p class="form__info">Диагностика и ремонт двигателей</p>
             <p class="form__info">
-              <time class="form__info-date" datetime="2024-02-03T14:00"><span>03.02</span><span>14:00</span> </time>
+              <time class="form__info-date" datetime="2024-02-03T14:00">
+                <span class="form__info-date-day">03.02</span>
+                <span class="form__info-date-time">14:00</span> 
+              </time>
             </p>
           </fieldset>
 
           <div class="form__btns-wrapper">
-            <button class="form__btn">
+            <button class="form__btn" type="button">
               <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M0.46967 6.53033C0.176777 6.23744 0.176777 5.76256 0.46967 5.46967L5.24264 0.696699C5.53553 0.403806 6.01041 0.403806 6.3033 0.696699C6.59619 0.989593 6.59619 1.46447 6.3033 1.75736L2.06066 6L6.3033 10.2426C6.59619 10.5355 6.59619 11.0104 6.3033 11.3033C6.01041 11.5962 5.53553 11.5962 5.24264 11.3033L0.46967 6.53033ZM13 6.75H1V5.25H13V6.75Z"
@@ -207,13 +210,17 @@
               <span>Назад</span>
             </button>
 
-            <button class="form__btn form__btn_next" disabled>
+            <button class="form__btn form__btn_next" disabled type="button">
               <span>Далее</span>
               <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M12.5303 6.53033C12.8232 6.23744 12.8232 5.76256 12.5303 5.46967L7.75736 0.696699C7.46447 0.403806 6.98959 0.403806 6.6967 0.696699C6.40381 0.989593 6.40381 1.46447 6.6967 1.75736L10.9393 6L6.6967 10.2426C6.40381 10.5355 6.40381 11.0104 6.6967 11.3033C6.98959 11.5962 7.46447 11.5962 7.75736 11.3033L12.5303 6.53033ZM0 6.75H12V5.25H0V6.75Z"
                   fill="currentColor" />
               </svg>
+            </button>
+
+            <button class="form__btn form__btn_submit" type="submit">
+              <span>Отправить</span>
             </button>
           </div>
         </form>
@@ -229,8 +236,14 @@
         <p class="footer__copyright">© AutoService, 2024</p>
 
         <ul class="footer__development">
-          <li>Designer: Anastasia Ilina</li>
-          <li>Developer: Aleksandra Ptashits</li>
+          <li>
+            Designer:
+            <a href="https://t.me/marshmellowww" class="footer__development-link" target="_blank">Anastasia Ilina</a>
+          </li>
+          <li>
+            Developer:
+            <a href="https://t.me/sasha_pt" class="footer__development-link" target="_blank">Aleksandra Ptashits</a>
+          </li>
         </ul>
       </div>
 

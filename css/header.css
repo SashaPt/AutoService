@@ -7,6 +7,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
 }
 
 .header__logo {
@@ -24,11 +26,33 @@
   border: 1px solid transparent;
   transition: 0.3s ease-out;
 }
+
 .header__link:hover {
   background: #e4f0f0;
 }
+
 .header__link:active,
-.header__link:focus {
+.header__link:focus,
+.header__link:focus-visible {
   border-color: #d10014;
   background: #f0f4f4;
 }
+
+
+@media (max-width: 900px) {
+  .header {
+    padding-top: 24px;
+  }
+
+  .header__logo {
+    width: 180px;
+  }
+}
+
+@media (max-width: 660px) {
+  .header {
+    padding-top: 16px;
+    padding-bottom: 24px;
+  }
+}
+
