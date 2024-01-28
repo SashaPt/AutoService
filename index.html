@@ -4,8 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/index.css">
+  <script src="js/index.js" defer></script>
   <title>Мастерский Ремонт - Быстро. Качественно. Доступно.</title>
 </head>
 
@@ -58,7 +59,7 @@
             class="contact__title-text contact__title-text_red">свяжемся с вами</span></h2>
 
         <form class="contact__form form">
-          <fieldset class="form__fieldset form__fieldset-type">
+          <fieldset class="form__fieldset form__fieldset-type form__fieldset_active">
             <legend class="form__title">Выберите нужное направление</legend>
 
             <div class="form__radio-wrapper">
@@ -201,7 +202,7 @@
           </fieldset>
 
           <div class="form__btns-wrapper">
-            <button class="form__btn" type="button">
+            <button class="form__btn form__btn_prev" type="button">
               <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M0.46967 6.53033C0.176777 6.23744 0.176777 5.76256 0.46967 5.46967L5.24264 0.696699C5.53553 0.403806 6.01041 0.403806 6.3033 0.696699C6.59619 0.989593 6.59619 1.46447 6.3033 1.75736L2.06066 6L6.3033 10.2426C6.59619 10.5355 6.59619 11.0104 6.3033 11.3033C6.01041 11.5962 5.53553 11.5962 5.24264 11.3033L0.46967 6.53033ZM13 6.75H1V5.25H13V6.75Z"
@@ -210,7 +211,7 @@
               <span>Назад</span>
             </button>
 
-            <button class="form__btn form__btn_next" disabled type="button">
+            <button class="form__btn form__btn_next" type="button">
               <span>Далее</span>
               <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path

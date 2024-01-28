@@ -24,6 +24,11 @@
 
 .form__fieldset {
   margin-bottom: 32px;
+  display: none;
+}
+
+.form__fieldset_active {
+  display: block;
 }
 
 .form__title {

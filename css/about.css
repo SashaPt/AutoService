@@ -136,7 +136,7 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 460px) {
   .about__bg::before {
     transform: translateY(-15%);
   }
