@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="img/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/index.css">
-  <script src="js/index.js" defer></script>
+  <script src="js/index.js" type="module"></script>
   <title>Мастерский Ремонт - Быстро. Качественно. Доступно.</title>
 </head>
 
@@ -62,43 +62,7 @@
           <fieldset class="form__fieldset form__fieldset-type form__fieldset_active">
             <legend class="form__title">Выберите нужное направление</legend>
 
-            <div class="form__radio-wrapper">
-              <div class="radio">
-                <input type="radio" class="radio__input" name="type" id="type1" value="bodyRepair">
-                <label class="radio__label" for="type1">Кузовной ремонт</label>
-              </div>
-              <div class="radio">
-                <input type="radio" class="radio__input" name="type" id="type2" value="engineDiagnosisRepair">
-                <label class="radio__label" for="type2">Диагностика и ремонт двигателей</label>
-              </div>
-              <div class="radio">
-                <input type="radio" class="radio__input" name="type" id="type3" value="electricalDiagnosis">
-                <label class="radio__label" for="type3">Электрика и электроника</label>
-              </div>
-              <div class="radio">
-                <input type="radio" class="radio__input" name="type" id="type4" value="breakSystems">
-                <label class="radio__label" for="type4">Тормозные системы и ходовая часть</label>
-              </div>
-              <div class="radio">
-                <input type="radio" class="radio__input" name="type" id="type5" value="wendingWorks">
-                <label class="radio__label" for="type5">Сварочные работы</label>
-              </div>
-              <div class="radio">
-                <input type="radio" class="radio__input" name="type" id="type6" value="acRepair">
-                <label class="radio__label" for="type6">Ремонт и обслуживание системы кондиционирования</label>
-              </div>
-              <div class="radio">
-                <input type="radio" class="radio__input" name="type" id="type7" value="oilChange">
-                <label class="radio__label" for="type7">Замена масел и техническое обслуживание</label>
-              </div>
-              <div class="radio">
-                <input type="radio" class="radio__input" name="type" id="type8" value="transmissionRepair">
-                <label class="radio__label" for="type8">Ремонт трансмиссии и коробки передач</label>
-              </div>
-              <div class="radio">
-                <input type="radio" class="radio__input" name="type" id="type9" value="tireFitting">
-                <label class="radio__label" for="type9">Шиномонтаж и балансировка</label>
-              </div>
+            <div class="form__radio-wrapper form__radio-wrapper_type">
             </div>
           </fieldset>
 
@@ -111,7 +75,7 @@
               <button class="form__btn-month" type="button">Апрель</button>
             </div>
 
-            <div class="form__radio-wrapper">
+            <div class="form__radio-wrapper form__radio-wrapper_day">
               <div class="radio">
                 <input type="radio" class="radio__input" name="day" id="day1">
                 <label class="radio__label" for="day1">1</label>
@@ -157,7 +121,7 @@
             <div class="form__time">
               <p class="form__subtitle">Доступное время:</p>
 
-              <div class="form__radio-wrapper">
+              <div class="form__radio-wrapper form__radio-wrapper_time">
                 <div class="radio">
                   <input type="radio" class="radio__input" name="time" id="time1">
                   <label class="radio__label" for="time1">10:00</label>
@@ -182,7 +146,7 @@
             </div>
           </fieldset>
 
-          <fieldset class="form__fieldset">
+          <fieldset class="form__fieldset form__fieldset_client">
             <legend class="form__title">Заполните поля</legend>
 
             <div class="form__input-wrapper">
@@ -192,11 +156,11 @@
               <input class="form__input" type="text" name="year" placeholder="Год выпуска">
             </div>
 
-            <p class="form__info">Диагностика и ремонт двигателей</p>
+            <p class="form__info form__info_type">Диагностика и ремонт двигателей</p>
             <p class="form__info">
               <time class="form__info-date" datetime="2024-02-03T14:00">
                 <span class="form__info-date-day">03.02</span>
-                <span class="form__info-date-time">14:00</span> 
+                <span class="form__info-date-time">14:00</span>
               </time>
             </p>
           </fieldset>
@@ -211,7 +175,7 @@
               <span>Назад</span>
             </button>
 
-            <button class="form__btn form__btn_next" type="button">
+            <button class="form__btn form__btn_next" disabled type="button">
               <span>Далее</span>
               <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
